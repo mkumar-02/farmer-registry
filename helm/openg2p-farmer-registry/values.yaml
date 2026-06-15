@@ -66,6 +66,17 @@ global:
   # Key inside the secret containing the client password
   authClientSecretKey: 'client_secret'
 
+  # Keycloak Admin API — publish DP_<policy_mnemonic> client roles when data
+  # policies are added/removed via the staff portal API.
+  # keycloakAdminRealm: admin token realm (typically master).
+  # keycloakRealm: registry staff portal client + DP_* roles realm (typically staff).
+  keycloakAdminUrl: 'http://commons-keycloak:80'
+  keycloakAdminRealm: 'master'
+  keycloakAdminClientId: 'admin-cli'
+  keycloakAdminClientSecret: 'commons-keycloak'
+  keycloakAdminClientSecretKey: 'admin-password'
+  keycloakDataPolicyRoleSyncEnabled: 'true'
+
   # IAM service internal URL
   iamServiceUrl: 'http://commons-services-iam-staff-portal-api'
 
@@ -600,6 +611,11 @@ staffPortalApi:
 
     REGISTRY_STAFF_PORTAL_API_AUTH_PROVIDER_API_URL: '{{ .Values.global.iamServiceUrl }}'
     REGISTRY_STAFF_PORTAL_API_KEYCLOAK_CLIENT_ID: '{{ tpl .Values.global.authClientId $ }}'
+    REGISTRY_STAFF_PORTAL_API_KEYCLOAK_ADMIN_URL: '{{ tpl .Values.global.keycloakAdminUrl $ }}'
+    REGISTRY_STAFF_PORTAL_API_KEYCLOAK_ADMIN_REALM: '{{ tpl .Values.global.keycloakAdminRealm $ }}'
+    REGISTRY_STAFF_PORTAL_API_KEYCLOAK_REALM: '{{ tpl .Values.global.keycloakRealm $ }}'
+    REGISTRY_STAFF_PORTAL_API_KEYCLOAK_ADMIN_CLIENT_ID: '{{ .Values.global.keycloakAdminClientId }}'
+    REGISTRY_STAFF_PORTAL_API_KEYCLOAK_DATA_POLICY_ROLE_SYNC_ENABLED: '{{ .Values.global.keycloakDataPolicyRoleSyncEnabled }}'
     REGISTRY_STAFF_PORTAL_API_MINIO_ENDPOINT: '{{ tpl .Values.global.minioHost $ }}'
     REGISTRY_STAFF_PORTAL_API_MINIO_SECURE: '{{ .Values.global.minioSecure }}'
     REGISTRY_STAFF_PORTAL_API_MINIO_BUCKET_NAME: '{{ tpl .Values.global.defaultBucketName $ }}'
@@ -641,6 +657,10 @@ staffPortalApi:
       secretKeyRef:
         name: '{{ tpl .Values.global.aweCallbackHmacSecretName $ }}'
         key: '{{ .Values.global.aweCallbackHmacSecretKey }}'
+    REGISTRY_STAFF_PORTAL_API_KEYCLOAK_ADMIN_CLIENT_SECRET:
+      secretKeyRef:
+        name: '{{ tpl .Values.global.keycloakAdminClientSecret $ }}'
+        key: '{{ tpl .Values.global.keycloakAdminClientSecretKey $ }}'
 
   startupProbe:
     enabled: true
@@ -1061,9 +1081,14 @@ keycloak-init:
             - "Integration Specialist"
             - "Reference Data Specialist"
             - "Technical Administrator"
+            # --- Record-level data policy roles (DP_*) ---
+            - "DP_region_central"
+            - "DP_region_pualula"
+            - "DP_region_chuminga"
+            - "DP_region_sulaka"
       users:
         # IMPORTANT: It is assumed that admin has already been created as part
-        # of commons layer
+        # of commons layer. Admin receives functional roles only — no DP_* roles.
         - username: admin
           clientRoleMappings:
             # Key must equal the per-release clientId above. keycloak-init
@@ -1080,6 +1105,7 @@ keycloak-init:
             '{{ .Release.Name }}-staff-portal':
               - "Operations Administrator"
               - "Technical Administrator"
+              - "DP_region_central"
         - username: maya.reed
           email: maya.reed@email.com
           password: '{{ .Values.global.aweApproverUserPassword }}'
@@ -1088,6 +1114,7 @@ keycloak-init:
             '{{ .Release.Name }}-staff-portal':
               - "Operations Administrator"
               - "Technical Administrator"
+              - "DP_region_pualula"
         - username: nina.patel
           email: nina.patel@email.com
           password: '{{ .Values.global.aweApproverUserPassword }}'
@@ -1096,6 +1123,7 @@ keycloak-init:
             '{{ .Release.Name }}-staff-portal':
               - "Operations Administrator"
               - "Technical Administrator"
+              - "DP_region_chuminga"
         - username: omar.sheikh
           email: omar.sheikh@email.com
           password: '{{ .Values.global.aweApproverUserPassword }}'
@@ -1104,6 +1132,7 @@ keycloak-init:
             '{{ .Release.Name }}-staff-portal':
               - "Operations Administrator"
               - "Technical Administrator"
+              - "DP_region_sulaka"
         - username: zara.khan
           email: zara.khan@email.com
           password: '{{ .Values.global.aweApproverUserPassword }}'
@@ -1112,6 +1141,7 @@ keycloak-init:
             '{{ .Release.Name }}-staff-portal':
               - "Operations Administrator"
               - "Technical Administrator"
+              - "DP_region_central"
         - username: chipo.banda
           email: chipo.banda@email.com
           password: '{{ .Values.global.aweApproverUserPassword }}'
@@ -1120,6 +1150,7 @@ keycloak-init:
             '{{ .Release.Name }}-staff-portal':
               - "Operations Administrator"
               - "Technical Administrator"
+              - "DP_region_pualula"
         - username: tendai.moyo
           email: tendai.moyo@email.com
           password: '{{ .Values.global.aweApproverUserPassword }}'
@@ -1128,6 +1159,7 @@ keycloak-init:
             '{{ .Release.Name }}-staff-portal':
               - "Operations Administrator"
               - "Technical Administrator"
+              - "DP_region_chuminga"
         - username: hana.bekele
           email: hana.bekele@email.com
           password: '{{ .Values.global.aweApproverUserPassword }}'
@@ -1136,6 +1168,7 @@ keycloak-init:
             '{{ .Release.Name }}-staff-portal':
               - "Operations Administrator"
               - "Technical Administrator"
+              - "DP_region_sulaka"
         - username: tesfaye.mekonnen
           email: tesfaye.mekonnen@email.com
           password: '{{ .Values.global.aweApproverUserPassword }}'
@@ -1144,6 +1177,8 @@ keycloak-init:
             '{{ .Release.Name }}-staff-portal':
               - "Operations Administrator"
               - "Technical Administrator"
+              - "DP_region_central"
+              - "DP_region_pualula"
         - username: mwansa.tembo
           email: mwansa.tembo@email.com
           password: '{{ .Values.global.aweApproverUserPassword }}'
@@ -1152,6 +1187,8 @@ keycloak-init:
             '{{ .Release.Name }}-staff-portal':
               - "Operations Administrator"
               - "Technical Administrator"
+              - "DP_region_chuminga"
+              - "DP_region_sulaka"
 
 idgenerator:
   enabled: true
