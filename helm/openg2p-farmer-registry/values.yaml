@@ -167,6 +167,25 @@ dbSeed:
   loadImages: true
   # Upload flat Jinja templates from the db-seed image to MinIO after SQL seed
   loadTemplates: true
+  # Seed g2p_registrant_authentication_providers + optional eSignet OAuth client registration
+  registrantAuth:
+    enabled: false
+    esignetBaseUrl: https://esignet.farmer.openg2p.org
+    clientId: openg2p-farmer-registrant-esignet
+    clientName: Farmer Registrant eSignet
+    providerId: d0000000-0000-4000-8000-000000000002
+    tokenEndpointAuthMethod: private_key_jwt
+    keymanagerSignAppId: ""
+    createEsignetClient: false
+    keycloakTokenUrl: https://keycloak.farmer.openg2p.org/realms/master/protocol/openid-connect/token
+    keycloakClientId: openg2p-sr-esignet-demo
+    keycloakClientSecret: ""
+    relyingPartyId: openg2p-auth-partner
+    clientPrivateKey: ""
+  # Upload household-head identities via upload_data_to_mock_esignet.py
+  esignetSeed:
+    enabled: false
+    profile: farmers
   image:
     repository: openg2p/openg2p-farmer-registry-db-seed
     tag: "develop"

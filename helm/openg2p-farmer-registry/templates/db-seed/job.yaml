@@ -105,6 +105,45 @@ spec:
               value: {{ .Values.dbSeed.loadImages | quote }}
             - name: LOAD_TEMPLATES
               value: {{ .Values.dbSeed.loadTemplates | quote }}
+            - name: LOAD_ESIGNET_IDENTITIES
+              value: {{ .Values.dbSeed.esignetSeed.enabled | quote }}
+            {{- if .Values.dbSeed.esignetSeed.enabled }}
+            - name: ESIGNET_SEED_PROFILE
+              value: {{ .Values.dbSeed.esignetSeed.profile | quote }}
+            {{- end }}
+            - name: REGISTRANT_AUTH_SEED_ENABLED
+              value: {{ .Values.dbSeed.registrantAuth.enabled | quote }}
+            {{- if .Values.dbSeed.registrantAuth.enabled }}
+            - name: ESIGNET_BASE_URL
+              value: {{ .Values.dbSeed.registrantAuth.esignetBaseUrl | quote }}
+            - name: REGISTRANT_AUTH_CLIENT_ID
+              value: {{ .Values.dbSeed.registrantAuth.clientId | quote }}
+            - name: REGISTRANT_AUTH_TOKEN_ENDPOINT_AUTH_METHOD
+              value: {{ .Values.dbSeed.registrantAuth.tokenEndpointAuthMethod | quote }}
+            - name: REGISTRANT_AUTH_KEYMANAGER_SIGN_APP_ID
+              value: {{ .Values.dbSeed.registrantAuth.keymanagerSignAppId | quote }}
+            - name: REGISTRANT_AUTH_OAUTH_CALLBACK_URL
+              value: 'https://staff-{{ tpl .Values.global.registryHostname $ }}/registrant-auth/callback'
+            - name: REGISTRANT_AUTH_PROVIDER_ID
+              value: {{ .Values.dbSeed.registrantAuth.providerId | quote }}
+            {{- if .Values.dbSeed.registrantAuth.createEsignetClient }}
+            - name: CREATE_ESIGNET_OAUTH_CLIENT
+              value: "true"
+            - name: ESIGNET_KEYCLOAK_TOKEN_URL
+              value: {{ .Values.dbSeed.registrantAuth.keycloakTokenUrl | quote }}
+            - name: ESIGNET_KEYCLOAK_CLIENT_ID
+              value: {{ .Values.dbSeed.registrantAuth.keycloakClientId | quote }}
+            - name: ESIGNET_KEYCLOAK_CLIENT_SECRET
+              value: {{ .Values.dbSeed.registrantAuth.keycloakClientSecret | quote }}
+            - name: ESIGNET_OAUTH_CLIENT_NAME
+              value: {{ .Values.dbSeed.registrantAuth.clientName | quote }}
+            - name: ESIGNET_RELYING_PARTY_ID
+              value: {{ .Values.dbSeed.registrantAuth.relyingPartyId | quote }}
+            {{- else if .Values.dbSeed.registrantAuth.clientPrivateKey }}
+            - name: REGISTRANT_AUTH_CLIENT_PRIVATE_KEY
+              value: {{ .Values.dbSeed.registrantAuth.clientPrivateKey | quote }}
+            {{- end }}
+            {{- end }}
             - name: IMAGE_BUCKET_NAME
               value: {{ .Values.global.imageBucketName | quote }}
             - name: AWE_DB_SEED_ENABLED
