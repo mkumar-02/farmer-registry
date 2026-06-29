@@ -1,3 +1,4 @@
+from .g2p_import_file_enricher_services import G2PImportFilePassThroughEnricherService
 from .g2p_farmer_enricher_services import (
     G2PDciFarmerCreateEnricherService,
     G2PDciFarmerUpdateEnricherService,

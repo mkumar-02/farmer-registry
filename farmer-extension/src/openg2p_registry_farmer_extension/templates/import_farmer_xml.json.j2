@@ -1,0 +1,13 @@
+{% set r = expanded %}
+{
+  "fr_farmer_personal_info": [{
+    "first_name": "{{ r.get('first_name', '') }}",
+    "middle_name": "{{ r.get('middle_name', '') }}",
+    "last_name": "{{ r.get('last_name', '') }}",
+    "birth_date": "{{ r.get('birth_date', '') }}",
+    "gender": "{{ r.get('gender', '') }}"
+  }],
+  "fr_farmer_socio_and_health": [{
+    "source_of_income": "{{ r.get('source_of_income', '') }}"
+  }]
+}

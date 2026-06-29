@@ -1,2 +1,16 @@
-INSERT INTO "public"."incoming_model_key_paths" ("key_path_id","data_model_id","key_path_for_message_id","key_path_for_sender","key_path_for_signature","key_path_for_signature_payload","is_list","key_path_for_list_elements")
-VALUES ('4a5d9a8e-ffef-466a-9d00-d8bd39b0337c','dbc08a31-10c6-4c48-9df3-ceb88fad8e20','$.body.header.message_id','$.body.header.sender_id','$.body.signature','$.body[''header'',''message'']','FALSE','');
+INSERT INTO "public"."incoming_model_key_paths" ("key_path_id","data_model_id","key_path_for_message_id","key_path_for_sender","key_path_for_signature","key_path_for_signature_payload","is_list","key_path_for_list_elements") VALUES
+('4a5d9a8e-ffef-466a-9d00-d8bd39b0337c','c331ba96-ac35-4014-9d13-4ef327f6b79b','$.body.header.message_id','$.body.header.sender_id','$.body.signature','$.body[''header'',''message'']','FALSE',''),
+('KP-IMPORT-FR-CSV','f0f00000-0000-4000-8000-000000000101','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-FR-TSV','f0f00000-0000-4000-8000-000000000102','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-FR-XLSX','f0f00000-0000-4000-8000-000000000103','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-FR-XLS','f0f00000-0000-4000-8000-000000000104','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-FR-JSON','f0f00000-0000-4000-8000-000000000105','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-FR-JSONL','f0f00000-0000-4000-8000-000000000106','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-FR-XML','f0f00000-0000-4000-8000-000000000107','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-HH-CSV','f0f00000-0000-4000-8000-000000000201','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-HH-TSV','f0f00000-0000-4000-8000-000000000202','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-HH-XLSX','f0f00000-0000-4000-8000-000000000203','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-HH-XLS','f0f00000-0000-4000-8000-000000000204','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-HH-JSON','f0f00000-0000-4000-8000-000000000205','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-HH-JSONL','f0f00000-0000-4000-8000-000000000206','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE',''),
+('KP-IMPORT-HH-XML','f0f00000-0000-4000-8000-000000000207','$.headers.message_id','$.headers.sender_id','$.headers.signature','$.body','FALSE','');

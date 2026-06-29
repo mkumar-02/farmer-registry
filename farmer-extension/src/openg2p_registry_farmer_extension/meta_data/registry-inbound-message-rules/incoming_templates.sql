@@ -1,3 +1,16 @@
-INSERT INTO "public"."incoming_templates" ("template_id","data_model_id","register_id","template_file_id","created_at","updated_at") VALUES ('IN-TMPL-1','c331ba96-ac35-4014-9d13-4ef327f6b79b','a1a4d25a-1cd4-4356-abac-985a0b3c6bcd','dci_to_openg2p_farmer.json.j2','2026-05-07 04:31:27.828397',NULL);
-
--- IN-TMPL-1: dci_to_openg2p_farmer.json.j2
+INSERT INTO "public"."incoming_templates" ("template_id","data_model_id","register_id","template_file_id","created_at","updated_at") VALUES
+('IN-TMPL-1','c331ba96-ac35-4014-9d13-4ef327f6b79b','a1a4d25a-1cd4-4356-abac-985a0b3c6bcd','dci_to_openg2p_farmer.json.j2','2026-05-07 04:31:27.828397',NULL),
+('TMPL-IMPORT-FR-CSV','f0f00000-0000-4000-8000-000000000101','a1a4d25a-1cd4-4356-abac-985a0b3c6bcd','import_farmer_csv.json.j2',NOW(),NULL),
+('TMPL-IMPORT-FR-TSV','f0f00000-0000-4000-8000-000000000102','a1a4d25a-1cd4-4356-abac-985a0b3c6bcd','import_farmer_tsv.json.j2',NOW(),NULL),
+('TMPL-IMPORT-FR-XLSX','f0f00000-0000-4000-8000-000000000103','a1a4d25a-1cd4-4356-abac-985a0b3c6bcd','import_farmer_xlsx.json.j2',NOW(),NULL),
+('TMPL-IMPORT-FR-XLS','f0f00000-0000-4000-8000-000000000104','a1a4d25a-1cd4-4356-abac-985a0b3c6bcd','import_farmer_xls.json.j2',NOW(),NULL),
+('TMPL-IMPORT-FR-JSON','f0f00000-0000-4000-8000-000000000105','a1a4d25a-1cd4-4356-abac-985a0b3c6bcd','import_farmer_json.json.j2',NOW(),NULL),
+('TMPL-IMPORT-FR-JSONL','f0f00000-0000-4000-8000-000000000106','a1a4d25a-1cd4-4356-abac-985a0b3c6bcd','import_farmer_jsonl.json.j2',NOW(),NULL),
+('TMPL-IMPORT-FR-XML','f0f00000-0000-4000-8000-000000000107','a1a4d25a-1cd4-4356-abac-985a0b3c6bcd','import_farmer_xml.json.j2',NOW(),NULL),
+('TMPL-IMPORT-HH-CSV','f0f00000-0000-4000-8000-000000000201','9055ab43-c85d-4833-bd00-ca657bb72644','import_farmer_household_csv.json.j2',NOW(),NULL),
+('TMPL-IMPORT-HH-TSV','f0f00000-0000-4000-8000-000000000202','9055ab43-c85d-4833-bd00-ca657bb72644','import_farmer_household_tsv.json.j2',NOW(),NULL),
+('TMPL-IMPORT-HH-XLSX','f0f00000-0000-4000-8000-000000000203','9055ab43-c85d-4833-bd00-ca657bb72644','import_farmer_household_xlsx.json.j2',NOW(),NULL),
+('TMPL-IMPORT-HH-XLS','f0f00000-0000-4000-8000-000000000204','9055ab43-c85d-4833-bd00-ca657bb72644','import_farmer_household_xls.json.j2',NOW(),NULL),
+('TMPL-IMPORT-HH-JSON','f0f00000-0000-4000-8000-000000000205','9055ab43-c85d-4833-bd00-ca657bb72644','import_farmer_household_json.json.j2',NOW(),NULL),
+('TMPL-IMPORT-HH-JSONL','f0f00000-0000-4000-8000-000000000206','9055ab43-c85d-4833-bd00-ca657bb72644','import_farmer_household_jsonl.json.j2',NOW(),NULL),
+('TMPL-IMPORT-HH-XML','f0f00000-0000-4000-8000-000000000207','9055ab43-c85d-4833-bd00-ca657bb72644','import_farmer_household_xml.json.j2',NOW(),NULL);

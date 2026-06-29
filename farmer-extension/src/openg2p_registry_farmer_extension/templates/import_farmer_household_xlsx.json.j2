@@ -1,0 +1,7 @@
+{% set r = expanded %}
+{
+  "hh_household_information": [{
+    "size_of_group": {{ r.get('size_of_group', 0) | int }},
+    "number_of_children": {{ r.get('number_of_children', 0) | int }}
+  }]
+}
