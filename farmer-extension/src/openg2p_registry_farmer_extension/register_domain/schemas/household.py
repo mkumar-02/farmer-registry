@@ -15,6 +15,9 @@ class G2PSchemaHousehold:
     number_of_female_members: Optional[int] = None
     number_of_male_members: Optional[int] = None
     other_land_owner: Optional[bool] = None
+    disability_severity: Optional[str] = None
+    education_level: Optional[str] = None
+    land_ownership_type: Optional[str] = None
 
 
 class G2PRegisterSchemaHousehold(G2PRegisterBaseSchema, G2PGeoSchema, G2PSchemaHousehold):

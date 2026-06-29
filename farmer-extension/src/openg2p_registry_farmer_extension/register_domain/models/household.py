@@ -13,6 +13,10 @@ class G2PHousehold:
     number_of_female_members: Mapped[int] = mapped_column(Integer, nullable=True)
     number_of_male_members: Mapped[int] = mapped_column(Integer, nullable=True)
     other_land_owner: Mapped[bool] = mapped_column(Boolean, nullable=True)
+    # Denormalized from linked Farmer / Land rows for PMT score resolution.
+    disability_severity: Mapped[str] = mapped_column(String, nullable=True)
+    education_level: Mapped[str] = mapped_column(String, nullable=True)
+    land_ownership_type: Mapped[str] = mapped_column(String, nullable=True)
 
 
 # All Register classes should have the prefix G2PRegister

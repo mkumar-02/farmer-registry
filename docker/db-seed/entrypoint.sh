@@ -168,6 +168,8 @@ run_registrant_auth_private_key
 # 2. Optionally run sample data scripts
 if [ "$LOAD_SAMPLE_DATA" = "true" ]; then
   run_sql_files "$SAMPLE_DATA_DIR" "sample data"
+  echo "[db-seed] Loading PMT score compute queue …"
+  python3 /seed/load_sample_data.py
 else
   echo "[db-seed] Skipping sample data (LOAD_SAMPLE_DATA=${LOAD_SAMPLE_DATA})."
 fi

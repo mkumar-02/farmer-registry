@@ -1,0 +1,458 @@
+[
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000001",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "13332f8c-0b88-447f-9815-fe1e18a95fa5",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "A_LOT_OF_DIFFICULTY",
+      "education_level": "HIGHER_EDUCATION",
+      "size_of_group": 4,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000002",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "4627740e-e389-447d-9f01-02066a3a5f58",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "SOME_DIFFICULTY",
+      "education_level": "ILLITERATE",
+      "size_of_group": 8,
+      "land_ownership_type": "TENANT"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000003",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "4b2e6d67-c18e-4b2d-9383-5410bf98cdee",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "SOME_DIFFICULTY",
+      "education_level": "ILLITERATE",
+      "size_of_group": 2,
+      "land_ownership_type": "TENANT"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000004",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "572ef937-4827-4ae3-a6c5-58d19446589b",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "CANNOT_DO_AT_ALL",
+      "education_level": "INTERMEDIARY",
+      "size_of_group": 3,
+      "land_ownership_type": "OWNER"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000005",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "577e3fa2-a680-4fe5-834c-ae1008e6d6b1",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "SOME_DIFFICULTY",
+      "education_level": "INTERMEDIARY",
+      "size_of_group": 7,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000006",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "5ce89cc8-2dbf-4267-a17a-46d24970daa3",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "SOME_DIFFICULTY",
+      "education_level": "INTERMEDIARY",
+      "size_of_group": 5,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000007",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "748189e3-d25d-4bb5-aa50-962f8b202070",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "NO_DIFFICULTY",
+      "education_level": "ILLITERATE",
+      "size_of_group": 7,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000008",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "82027f4d-2ba2-4c5e-b88f-f0d48424be92",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "NO_DIFFICULTY",
+      "education_level": "ILLITERATE",
+      "size_of_group": 4,
+      "land_ownership_type": "TENANT"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000009",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "820f8d23-623b-4924-9e48-85f4f0d6685c",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "NO_DIFFICULTY",
+      "education_level": "ILLITERATE",
+      "size_of_group": 7,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000010",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "849136a1-ce27-4ae3-9872-bea24408ee0e",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "NO_DIFFICULTY",
+      "education_level": "CAN_READ_AND_WRITE",
+      "size_of_group": 8,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000011",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "9d50eca6-ad68-4a31-ad5e-b881ef09f9a5",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "SOME_DIFFICULTY",
+      "education_level": "HIGHER_EDUCATION",
+      "size_of_group": 5,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000012",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "9f02dffb-4c82-43b7-a93d-156fdacf6940",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "SOME_DIFFICULTY",
+      "education_level": "HIGHER_EDUCATION",
+      "size_of_group": 6,
+      "land_ownership_type": "TENANT"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000013",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "afc090cd-c4da-417b-90be-4d3a17b62926",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "NO_DIFFICULTY",
+      "education_level": "CAN_READ_AND_WRITE",
+      "size_of_group": 4,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000014",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "bf1aa425-30b6-47ae-a051-30509daf07b3",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "CANNOT_DO_AT_ALL",
+      "education_level": "ILLITERATE",
+      "size_of_group": 2,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000015",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "c95bb239-490c-48be-ac8d-f3adbd0feda4",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "A_LOT_OF_DIFFICULTY",
+      "education_level": "HIGHER_EDUCATION",
+      "size_of_group": 2,
+      "land_ownership_type": "OWNER"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000016",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "ca4ebd81-88e7-49e4-ba66-3cdcc8ca02bf",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "NO_DIFFICULTY",
+      "education_level": "INTERMEDIARY",
+      "size_of_group": 3,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000017",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "d3b219cb-08f8-4393-b846-cbc044089ed1",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "NO_DIFFICULTY",
+      "education_level": "INTERMEDIARY",
+      "size_of_group": 5,
+      "land_ownership_type": "OWNER"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000018",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "d51580b6-c577-4acc-a253-fa64b60cdb57",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "A_LOT_OF_DIFFICULTY",
+      "education_level": "INTERMEDIARY",
+      "size_of_group": 2,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000019",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "d78b8bb4-1934-403e-b358-6c2b26860112",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "NO_DIFFICULTY",
+      "education_level": "CAN_READ_AND_WRITE",
+      "size_of_group": 8,
+      "land_ownership_type": "TENANT"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000020",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "de87cb9f-9279-4013-aa1b-1e71276c8504",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "SOME_DIFFICULTY",
+      "education_level": "ILLITERATE",
+      "size_of_group": 4,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000021",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "e71bdc7f-6d31-45f9-9296-b74c5b790b1e",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "A_LOT_OF_DIFFICULTY",
+      "education_level": "BASIC",
+      "size_of_group": 2,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000022",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "f3c9d465-21a3-4585-99e1-f4718b625754",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "SOME_DIFFICULTY",
+      "education_level": "HIGHER_EDUCATION",
+      "size_of_group": 5,
+      "land_ownership_type": "TENANT"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000023",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "f409ca32-bca7-4514-acc6-b69bf02961ee",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "CANNOT_DO_AT_ALL",
+      "education_level": "INTERMEDIARY",
+      "size_of_group": 5,
+      "land_ownership_type": "OWNER"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  },
+  {
+    "queue_id": "f2100000-0000-4000-8000-000000000024",
+    "register_id": "9055ab43-c85d-4833-bd00-ca657bb72644",
+    "link_internal_record_id": "ff504d76-5c7f-456b-86a8-1781cae5453c",
+    "score_definition_id": "f2000000-0000-4000-8000-000000000001",
+    "score_type": "PMT",
+    "change_request_id": null,
+    "submission_id": null,
+    "contributing_attribute_values": {
+      "disability_severity": "CANNOT_DO_AT_ALL",
+      "education_level": "HIGHER_EDUCATION",
+      "size_of_group": 3,
+      "land_ownership_type": "CROP_SHARE"
+    },
+    "compute_status": "PENDING",
+    "compute_no_of_attempts": 0,
+    "compute_latest_timestamp": null,
+    "compute_latest_error_code": null
+  }
+]
